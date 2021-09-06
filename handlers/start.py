@@ -32,7 +32,6 @@ async def _human_time_duration(seconds):
 @Client.on_message(command("start") & filters.private & ~filters.edited)
 async def start_(client: Client, message: Message):
     await message.reply_text(
-        photo=f"{BOT_IMG}",
         f"""<b>🕊️ **Hallo {message.from_user.mention}** \n
 **__[{BOT_NAME}](https://t.me/{BOT_USERNAME}) Adalah sebuah bot yang dirancang untuk memutar musik di obrola suara !__**
 **__Untuk melihat beberapa perintah dalam penggunaan bot bisa klik » 📚 Commands !__**
