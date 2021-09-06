@@ -56,7 +56,7 @@ async def start_(client: Client, message: Message):
                         "📣 Official Channel", url=f"https://t.me/{UPDATES_CHANNEL}")
                 ],[
                     InlineKeyboardButton(
-                        "⚙️ Source Code ⚙️", url="https://github.com/KennedyProject/KennedyXMusic"
+                        "⚙️ Source Code ⚙️", url="https://github.com/Askarbot/skyzuXmusic"
                     )
                 ]
             ]
