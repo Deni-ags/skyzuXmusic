@@ -457,7 +457,7 @@ async def play(_, message: Message):
                         message.chat.id, "**__Saya telah bergabung ke grup untuk memutar musik__**"
                     )
                     await lel.edit(
-                        "<b>✅ Assistant bergabung ke grup\n\n• Jika terjadi masalah, laporkan ke @kenbotsupport</b>",
+                        "<b>✅ Assistant bergabung ke grup\n\n• Jika terjadi masalah, laporkan ke @skyzuuuu</b>",
                     )
                 except UserAlreadyParticipant:
                     pass
