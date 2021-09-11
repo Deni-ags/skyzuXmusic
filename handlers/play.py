@@ -583,8 +583,8 @@ async def play(_, message: Message):
             emojilist = ["1️⃣","2️⃣","3️⃣","4️⃣","5️⃣"]
             while j < 5:
                 toxxt += f"{emojilist[j]} [{results[j]['title'][:23]}](https://youtube.com{results[j]['url_suffix']})...\n"
-                toxxt += f" ├ ⏰ **Duration** - {results[j]['duration']}\n"
-                toxxt += f" └ 👁 **Viewer** - {results[j]['views']}\n\n"
+                toxxt += f" ├• **Duration** - {results[j]['duration']}\n"
+                toxxt += f" └• **Viewer** - {results[j]['views']}\n\n"
                 j += 1            
             keyboard = InlineKeyboardMarkup(
                 [
@@ -849,7 +849,7 @@ async def ytplay(_, message: Message):
     for i in message.command[1:]:
         query += " " + str(i)
     print(query)
-    await lel.edit("🔁 **__Menghubungkan__**")
+    await lel.edit("🔁 **__Menghubungkan ke VCG__**")
     ydl_opts = {"format": "bestaudio[ext=m4a]"}
     try:
         results = YoutubeSearch(query, max_results=1).to_dict()
