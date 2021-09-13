@@ -4,7 +4,7 @@ from config import BOT_USERNAME, BOT_NAME, ASSISTANT_NAME, OWNER_NAME, UPDATES_C
 from helpers.filters import command
 from pyrogram import Client, filters
 from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton
-from helpers.decorators import authorized_users_only
+from helpers.decorators import authorized_users_only, sudo_users_only
 
 
 START_TIME = datetime.utcnow()
